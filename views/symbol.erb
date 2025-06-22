@@ -1,0 +1,7 @@
+<h1>Convert <%= @from %></h1>
+<a href="/">back</a>
+<ul>
+  <% @currencies["currencies"].each do |x| %>
+      <li><a href="/<%= "#{@from}/#{x[0]}" %>">Convert 1 <%= @from %> to <%= x[0] %></a></li>
+    <% end %>
+</ul>

@@ -1,0 +1,7 @@
+<h1>Currency Pairs</h1>
+
+<ul>
+<% @currencies["currencies"].each do |x| %>
+  <li><a href="/<%= x[0] %>"><%= x[0] %></a>, <%= x[1] %> </li>
+<% end %>
+</ul>
